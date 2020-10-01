@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 在一个二维数组中（每个一维数组的长度相同），
+        // 每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。
+        // 请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+//         class Solution {
+//              public:
+    //     bool Find(int target, vector<vector<int> > array) {
+    //         int rows=array.size();
+    //         int cols=array[0].size();
+    //         int i=0,j=cols-1;
+    //         while(j>=0&&i<cols){
+    //             if(target ==array[i][j])
+    //                 return true;
+    //             else if(target>array[i][j])
+    //                 i++;
+    //            else
+    //                 j--;
+    //         }
+    //         return false;
+
+    //     }
+
+// };
+
+// 2. 替换空格：请实现一个函数，将一个字符串中的每个空格替换成“%20”。
+// 例如，当字符串为We Are Happy.
+// 则经过替换之后的字符串为We%20Are%20Happy。
+function replceWhitespace(str){
+  return str.replace("\\s","20%")
+}
+    </script>
+</body>
+</html>

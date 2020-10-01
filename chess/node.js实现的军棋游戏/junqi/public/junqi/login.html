@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>军棋</title>
+
+  <style type="text/css">
+
+    button {
+      height: 60px;
+      width: 120px;
+      margin: 4px;
+      padding: 4px;
+      cursor:pointer;
+    }
+
+    .STYLE1 {
+      color: #0000FF;
+      font-weight: bold;
+    }
+    .STYLE2 {color: #990000}
+    .STYLE4 {
+      font-size: 36px;
+      color: #FF0000;
+    }
+
+  </style>
+  <script src="/javascripts/jquery-1.6.4.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="cocos2d-js-v3.8.js" charset="UTF-8"></script>
+  <script src="src/resource.js"></script>
+  <script src="src/msg.js"></script>
+  <script src="src/login.js"></script>
+
+</head>
+
+
+<body onload="JunQi.login.init()">
+
+<table align="center">
+  <tr>
+    <td>
+
+
+<span class="STYLE1">游戏大厅</span> 用户：<span class="STYLE2"><input id="playerName" type="text" /></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：<span class="STYLE2"><input id="passWord1" type="password" />
+&nbsp;&nbsp;&nbsp;<button id="Button1" onclick="JunQi.registPlayer()" style="height:25px;width:100px"> 注册新用户</button>
+&nbsp;&nbsp;&nbsp;</span>
+
+<hr />
+<p>请选择：</p>
+
+  <input type="radio" name="playerType" value="r" /> 红方
+  <input type="radio" name="playerType" value="b" /> 黑方
+  <br>
+<hr />
+<br />
+
+<button id="room1" onclick="JunQi.enterRoom(1)" >进入游戏<br>[房间1]<br>共 0 人</button>
+&nbsp;
+<button id="room2" onclick="JunQi.enterRoom(2)">进入游戏<br>[房间2]<br>共 0 人</button>
+&nbsp;
+<button id="room3" onclick="JunQi.enterRoom(3)">进入游戏<br>[房间3]<br>共 0 人</button>
+&nbsp;
+<button id="room4" onclick="JunQi.enterRoom(4)">进入游戏<br>[房间4]<br>共 0 人</button>
+&nbsp;
+<button id="room5" onclick="JunQi.enterRoom(5)">进入游戏<br>[房间5]<br>共 0 人</button>
+<br /><br />
+<button id="room6" onclick="JunQi.enterRoom(6)">进入游戏<br>[房间6]<br>共 0 人</button>
+&nbsp;
+<button id="room7" onclick="JunQi.enterRoom(7)">进入游戏<br>[房间7]<br>共 0 人</button>
+&nbsp;
+<button id="room8" onclick="JunQi.enterRoom(8)">进入游戏<br>[房间8]<br>共 0 人</button>
+&nbsp;
+<button id="room9" onclick="JunQi.enterRoom(9)">进入游戏<br>[房间9]<br>共 0 人</button>
+&nbsp;
+<button id="room10" onclick="JunQi.enterRoom(10)">进入游戏<br>[房间10]<br>共 0 人</button>
+<br /><br />
+<button id="room11" onclick="JunQi.enterRoom(11)">进入游戏<br>[房间11]<br>共 0 人</button>
+&nbsp;
+<button id="room12" onclick="JunQi.enterRoom(12)">进入游戏<br>[房间12]<br>共 0 人</button>
+&nbsp;
+<button id="room13" onclick="JunQi.enterRoom(13)">进入游戏<br>[房间13]<br>共 0 人</button>
+&nbsp;
+<button id="room14" onclick="JunQi.enterRoom(14)">进入游戏<br>[房间14]<br>共 0 人</button>
+&nbsp;
+<button id="room15" onclick="JunQi.enterRoom(15)">进入游戏<br>[房间15]<br>共 0 人</button>
+<br /><br />
+<button id="room16" onclick="JunQi.enterRoom(16)">进入游戏<br>[房间16]<br>共 0 人</button>
+&nbsp;
+<button id="room17" onclick="JunQi.enterRoom(17)">进入游戏<br>[房间17]<br>共 0 人</button>
+&nbsp;
+<button id="room18" onclick="JunQi.enterRoom(18)">进入游戏<br>[房间18]<br>共 0 人</button>
+&nbsp;
+<button id="room19" onclick="JunQi.enterRoom(19)">进入游戏<br>[房间19]<br>共 0 人</button>
+&nbsp;
+<button id="room20" onclick="JunQi.enterRoom(20)">进入游戏<br>[房间20]<br>共 0 人</button>
+<br /><br />
+
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>

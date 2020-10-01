@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="bind.js"></script>
+  <script>
+    this.li = 20
+    function test (data, data2) {
+      // console.log(this.li)
+      this.li = "构造函数"
+      console.log(data2)
+    }
+    test.prototype.init = function () {
+      console.log(this.li)
+    }
+    var result = test.bind(this, "XXX niu")
+    result("li")
+    // new result()
+    var
+    
+  </script>
+</body>
+</html>

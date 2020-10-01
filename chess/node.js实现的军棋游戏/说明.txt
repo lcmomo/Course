@@ -1,0 +1,14 @@
+node.js+cocos2d实现的军棋游戏。通过websocket实现通信。可以做双人对战与人机对战（人机对战功能还比较简易）
+
+运行web服务器的方式
+命令行进入 junqi目录,执行 node bin/www.js 将会在3000端口监听。
+
+开启网页客户端的方式
+
+浏览器地址栏输入localhost:3000 
+
+有几点要注意
+1，要安装好node.js, 可以在命令行执行node -v ，检查node的版本。
+2，如果提示没有安装socket.io模块。 运行 npm install socket.io
+
+

@@ -1,0 +1,43 @@
+.sider-container {
+  text-align: center;
+  height: calc(100vh - 73px);
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+  .blogger-infor {
+    margin-top: 40px;
+    .name {
+      margin-top: 15px;
+      margin-bottom: 9px;
+      font-weight: bolder;
+    }
+    .introduction {
+      margin-bottom: 9px;
+    }
+  }
+  .new-articles {
+    .articles {
+      .item {
+        cursor: pointer;
+        text-align: left;
+        display: block;
+        padding: 8px 28px;
+        color: #999999;
+        &:hover {
+          color: #1890ff;
+          background-color: #eeeeee;
+        }
+      }
+    }
+  }
+
+  .tags-container {
+    margin-bottom: 18px;
+    .tags {
+      padding: 0px 28px;
+      .ant-tag {
+        cursor: pointer;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
