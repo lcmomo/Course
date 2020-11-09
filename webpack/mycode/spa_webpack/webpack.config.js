@@ -32,7 +32,10 @@ webpackConfig={
       {
         test: /\.css$/,
         use: [
-          // 'style-loader',
+          // // 'style-loader',
+          // {
+          //   loader: 'css-loader?modules&localIdentName=[name]_[local]-[hash:base64:5]'
+          // }, 这两个与下面一个互斥，只能同时使用一个
           {
             loader: MiniCssExtractPlugin.loader,
             options: {

@@ -1,6 +1,6 @@
-一、基本使用
+## 一、基本使用
 
-npm install lodash-es --save  (函数是编程模块，webpack自带的tree-shaking 筛选不到)
+npm install lodash-es --save  (lodash-es是scope内的，是函数式编程模块，webpack自带的tree-shaking 筛选不到)
 
 lodash-es 与lodash区别 ：lodash 不支持解构 如：import { isArray} from 'lodash' 会报错
 
@@ -34,7 +34,7 @@ npm install --save-dev clean-webpack-plugin
 npm i --save-dev html-webpack-plugin
 
 
-二、优化：
+## 二、优化：
 
  =================开发环境=================
 1. 开启多核压缩：

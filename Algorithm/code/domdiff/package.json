@@ -1,0 +1,12 @@
+{
+  "name": "domdiff",
+  "version": "1.0.0",
+  "description": "比较两颗DOM树的差异是Virtual DOM算法最核心的部分，两个数的完全diff算法是一个时间复杂度为O(n^3)的问题。但是在前端，很少会跨越层级移动dOM元素。所以Virtual Dom 只会对统一层级元素进行对比，这样算法复杂度可以达到O (n)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
