@@ -1,0 +1,17 @@
+{
+  "name": "webpack5",
+  "version": "1.0.0",
+  "description": "1. webpack 内部模块机制 \r     webpack 构建原理 tapable \r     tapable 构建流程管控",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

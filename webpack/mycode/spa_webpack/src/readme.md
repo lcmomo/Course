@@ -33,6 +33,18 @@ npm install --save-dev clean-webpack-plugin
 9. html-webpack-plugin
 npm i --save-dev html-webpack-plugin
 
+```js
+new HtmlWebpackPlugin({
+      filename:"index.html",
+      template:"src/index.html",
+      loading
+  }),
+```
+
+10. clean-webpack-plugin:
+new CleanWebpackPlugin(['dist']),
+清除生成的指定目录
+
 
 ## 二、优化：
 
