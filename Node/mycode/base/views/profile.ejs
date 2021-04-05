@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: skyblue;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>welcome to my <%= websiteName %> page</h1>
+  <p><strong>Age: </strong><%= data[0].age %></p>
+  <hr/>
+  <ul>
+    <% data.forEach(item => {%>
+      <li><%= item.age %></li>
+      <% item.name.forEach(item => {%>
+        <li><%= item.name %></li>
+        <% })%>
+    <%})%>
+    
+  </ul>
+</body>
+</html>

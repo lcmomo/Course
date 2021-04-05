@@ -1,0 +1,18 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "一个基于Chrome V8引擎的JavaScript运行环境，node让JavaScript可以运行在服务端的开发平台. 使用事件驱动，非阻塞I/O 模型，轻量又高效。npm是全球最大的开源库生态系统。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

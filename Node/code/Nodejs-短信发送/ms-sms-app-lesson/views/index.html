@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>短信应用</title>
+</head>
+<body>
+    <div class="container">
+        <h2>发送短信</h2>
+        <input type="tel" name="number" id="number" placeholder="请输入手机号码...">
+        <input type="text" name="msg" id="msg" placeholder="请输入短信消息...">
+        <input type="button" id="button" value="Send Message" class="button button-primary">
+        <p class="response"></p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

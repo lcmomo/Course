@@ -124,19 +124,20 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst result=()=>{\r\n    con
  function __webpack_require__ (moduleId){
     // 1. 找该模块缓存结果，
     // 2. 没有就注册moduleId到缓存
-    //    3. 执行moduleId
+    // 3. 执行moduleId
         4.(function(module, __webpack_exports__, __webpack_require__) {})()
         const module={
           exports:{}
         }
-        moduleId.call(this,module, module.exports, __webpack_require__);
+        // 通过call方式，便于修正this和传参
+        moduleId.call(this, module, module.exports,  __webpack_require__);
         return module.exports;
 
  }
 //  0. 注册 __webpack_require__ 函数
 //  1. 执行modules的入口key
  return  __webpack_require__(modules[ "./src/index.js"])
- 
+
 })({
   "./src/index.js":123,    //commonJs语法，同步加载
   "./src/test.js":value

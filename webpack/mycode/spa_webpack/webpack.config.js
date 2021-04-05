@@ -19,6 +19,10 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 // const setTitle = require('node-bash-title');
 // setTitle('liuc的webpack🍎');
+
+const ManifestPlugin = require("webpack-manifest-plugin");
+
+
 const {
   join
 } = require("path");
@@ -49,7 +53,32 @@ webpackConfig={
       },
     ],
   },
+  devServer: {
+    // hot: true,
+    before(app){
+      app.get("/api/test",(req, res) => {
+        res.json({ code: 200, message: "success" })
+      })
+    }
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          chunks: "initial",
+          name: "common",
+          minChunks: 1,
+          maxInitialRequests: 5,
+          minSize: 0
+        }
+      }
+    },
+    runtimeChunk: {
+      name: "runtime"
+    }
+  },
   plugins: [
+    new ManifestPlugin(),
     new WebpackDeepScopeAnalysisPlugin(),
     // new MiniCssExtractPlugin({
     //   filename:  "[name].css",

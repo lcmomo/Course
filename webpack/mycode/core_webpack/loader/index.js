@@ -3,14 +3,14 @@
 //3.中间loader执行的时候 传入的就是上一个loader的执行结果
 //4.loader需要异步 this.async() this.callcalk();
 
-module.exports=function(content,map,meta){
+module.exports = function (content, map, meta) {
     console.log("loader执行了")
-    return content+this.data.value;
+    return content + this.data.value;
 }
 
 //前置钩子
-module.exports.pitch=function(remainRequest,preRequest,data){
-    data.value="234";
+module.exports.pitch = function (remainRequest, preRequest, data) {
+    data.value = "234";
 }
 
 //6.前置钩子的执行顺序

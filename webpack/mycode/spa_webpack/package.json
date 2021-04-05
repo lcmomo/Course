@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
+    "dev:server": "webpack-dev-server --mode development",
     "dev-dash": "webpack-dashboard -- webpack --mode development",
     "prod": "webpack --mode production",
     "dev:chart": "webpack --mode development --profile --json > stats.json"
@@ -31,12 +32,14 @@
     "webpack-cli": "^3.3.10",
     "webpack-dashboard": "^3.2.0",
     "webpack-deep-scope-plugin": "^1.6.2",
+    "webpack-dev-server": "^3.11.2",
     "webpack-manifest-plugin": "^2.2.0",
     "webpack-merge": "^4.2.2",
     "webpack-parallel-uglify-plugin": "^1.1.2",
     "yargs-parser": "^16.1.0"
   },
   "dependencies": {
+    "http-server": "^0.12.3",
     "lodash-es": "^4.17.15"
   }
 }
